@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginEnd="7dp"
+    android:layout_marginStart="7dp">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/iv_cat"
+        android:background="@drawable/custom_radius"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/ga"
+        app:riv_corner_radius="60dp"
+        android:scaleType="centerCrop" />
+
+    <View
+        android:id="@+id/view_cat"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        />
+
+    <ImageView
+        android:id="@+id/iv"
+        android:visibility="gone"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_cat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|top"
+        android:minLines="2"
+        android:textStyle="normal"
+        android:maxLines="2"
+        android:paddingTop="7dp"
+        android:textSize="17sp"
+        android:text="@string/app_name"
+        android:textColor="@color/text"
+        android:lineSpacingMultiplier="0.9"/>
+
+</LinearLayout>
